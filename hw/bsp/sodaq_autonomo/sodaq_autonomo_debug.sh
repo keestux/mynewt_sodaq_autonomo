@@ -40,7 +40,7 @@ echo "Debugging" $FILE_NAME
 # Exit openocd when gdb detaches.
 #
 set -m
-openocd -f $MY_PATH/arduino_zero.cfg -c "gdb_port 3333;telnet_port 4444; init;reset halt" &
+openocd -f $MY_PATH/sodaq_autonomo.cfg -c "gdb_port 3333;telnet_port 4444; init;reset halt" &
 set +m
 echo "target remote localhost:3333 " > $GDB_CMD_FILE
 arm-none-eabi-gdb -x $GDB_CMD_FILE $FILE_NAME

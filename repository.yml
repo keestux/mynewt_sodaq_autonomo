@@ -1,0 +1,4 @@
+repo.name: mynewt_sodaq_autonomo
+repo.versions:
+    "0.0.0": "mynewt_sodaq_autonomo_0_0_0_tag"
+    "0-latest": "0.0.0"

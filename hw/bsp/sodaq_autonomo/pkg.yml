@@ -18,7 +18,7 @@
 #
 pkg.name: "hw/bsp/sodaq_autonomo"
 pkg.type: bsp
-pkg.repository: https://github.com/runtimeinc/mynewt_sodaq_autonomo
+pkg.repository: https://github.com/keestux/mynewt_sodaq_autonomo
 
 pkg.arch: cortex_m0
 pkg.compiler: "@apache-mynewt-core/compiler/arm-none-eabi-m0"
@@ -28,7 +28,7 @@ pkg.downloadscript: "sodaq_autonomo_download.sh"
 pkg.debugscript: "sodaq_autonomo_debug.sh"
 pkg.cflags: -mthumb -D__SAMD21J18A__
 pkg.deps:
-    - hw/mcu/atmel/samd21xx
+    - "@mynewt_arduino_zero/hw/mcu/atmel/samd21xx"
     - "@apache-mynewt-core/libs/baselibc"
 
 pkg.cflags.sodaq_autonomo: -DSODAQ_AUTONOMO
